@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Iconos-->
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Js de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Explorá Patagonia</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html"> <img src="imagenes/logo.png" alt="logo"> Explorá Patagonia </a>
+          
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#miMenu" >
+      </button>
+
+      <div class="collapse navbar-collapse" id="miMenu">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+            
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Redes sociales</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.instagram.com/bariloche">Instagram</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://x.com/Bariloche_ar">Twitter / X</a></li>
+              </ul>
+
+              <li><button type="button" class="ms-2 btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">
+                Contacto
+                </button> <!-- Botón de Modal -->
+              </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  
+  <!-- Imagen Principal -->
+  <div class="container-imagen-principal">
+    <section class="w-100 mt-3 row justify-content-around m-auto">
+    
+      <div class="w-100 col-md-12 col-lg-3">
+        <img src="imagenes/imagen-principal.jpg" alt="imagen principal" class="img-fluid">
+      </div>
+
+    </section>
+  </div>
+
+  <header class="container-fluid">
+
+    <h1 class="titulo">San Carlos de Bariloche</h1> 
+
+    <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam, porro delectus voluptate sint asperiores quae accusamus ut, vel, blanditiis vitae explicabo maiores optio labore laboriosam atque aliquid nisi. Quaerat. </p>
+
+  </header>
+
+<main>
+  
+  <div class="container-md">
+
+    <section class="p-3 w-100 row justify-content-around m-3">
+
+      <div class="col-md-12 col-lg-3 bg-light text-center">
+        <h2>Caminatas</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto libero voluptas unde asperiores optio id sapiente incidunt repellendus nisi maxime dolores ipsa nulla possimus, illum cumque deleniti facere odit! Ipsa?</p>
+      </div>
+
+      <div class="col-md-12 col-lg-3 bg-light text-center">
+        <h2>Kayak</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo necessitatibus quisquam nobis obcaecati voluptatum.</p>
+      </div>
+
+      <div class="col-md-12 col-lg-3 bg-light text-center">
+        <h2>Playas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="container-md">
+  
+    <section class="w-100 m-3 row justify-content-around">
+
+      <div class="w-25 col-md-12 col-lg-3">
+        <img src="imagenes/imagen1.jpg" alt="lago" class="img-fluid">
+      </div>
+
+      <div class="w-25 col-md-12 col-lg-3">
+        <img src="imagenes/imagen2.jpg" alt="cascada" class="img-fluid">
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title" id="miModal">Contacto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="codigo.php" class="needs-validation" method="post" novalidate>
+          
+          <div> 
+            <!-- Nombre -->
+            <label for="nombre" class="form-label">Nombre</label>
+
+            <input type="text" required name="nombre" id="nombre" class="form-control">
+
+            <div class="invalid-feedback">Campo de nombre incompleto!</div>
+
+          </div> 
+
+          <!-- Email -->
+          <label for="email" class="form-label">Email</label>
+
+          <input type="email" required name="email" id="email" class="form-control">
+
+          <div class="invalid-feedback">El campo de email está mal</div>
+
+          <button class="btn btn-success">Enviar Formulario</button>
+
+        </form>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/codigo.js"></script>
+
+</body>
+</html>
