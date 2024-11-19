@@ -41,14 +41,13 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Redes sociales</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://www.instagram.com/bariloche">Instagram</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/barilochear">Instagram</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="https://x.com/Bariloche_ar">Twitter / X</a></li>
               </ul>
 
-              <li><button type="button" class="ms-2 btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">
-                Contacto
-                </button> <!-- Botón de Modal -->
+              <li>
+                <button type="button" class="ms-2 btn btn-dark" data-bs-toggle="modal" data-bs-target="#miModal">Contacto</button> <!-- Botón de Modal -->
               </li>
           </li>
         </ul>
@@ -67,11 +66,11 @@
     </section>
   </div>
 
-  <header class="container-fluid">
+  <header class="container-fluid bg-light">
 
     <h1 class="titulo">San Carlos de Bariloche</h1> 
 
-    <p class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam, porro delectus voluptate sint asperiores quae accusamus ut, vel, blanditiis vitae explicabo maiores optio labore laboriosam atque aliquid nisi. Quaerat. </p>
+    <p class="blockquote">Vení a conocer esta ciudad que se destaca por sus hermosos paisajes, sus lagos y sus bosques...</p>
 
   </header>
 
@@ -81,19 +80,19 @@
 
     <section class="p-3 w-100 row justify-content-around m-3">
 
-      <div class="col-md-12 col-lg-3 bg-light text-center">
+      <div class="col-md-12 col-lg-3 border border-3 border-light text-center">
         <h2>Caminatas</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto libero voluptas unde asperiores optio id sapiente incidunt repellendus nisi maxime dolores ipsa nulla possimus, illum cumque deleniti facere odit! Ipsa?</p>
+        <p>Bariloche cuenta con una amplia variedad de senderos para recorrer, ideales tanto para paseos tranquilos como para <em>trekking</em> más exigentes. Disfrutá de miradores con vistas espectaculares, rodeado de bosques, montañas y lagos. ¡Una experiencia única!</p>
       </div>
 
-      <div class="col-md-12 col-lg-3 bg-light text-center">
-        <h2>Kayak</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo necessitatibus quisquam nobis obcaecati voluptatum.</p>
-      </div>
-
-      <div class="col-md-12 col-lg-3 bg-light text-center">
+      <div class="col-md-12 col-lg-3 border border-3 border-light text-center">
         <h2>Playas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Relajate y disfrutá de la tranquilidad y las vistas impresionantes de las playas de Bariloche, ideales para tomar mates, andar en kayak o simplemente despejar y conectarte con la naturaleza. ¡Visitá el Parque Nacional Nahuel Huapi!</p>
+      </div>
+
+      <div class="col-md-12 col-lg-3 border border-3 border-light text-center">
+        <h2>Gastronomía</h2>
+        <p>Conocé la gran variedad de restaurantes, cervecerías, chocolaterías y casas de té. Descubri platos típicos de distintas partes del mundo, como Hungría, Suiza y Alemania. ¡No te pierdas el <em>goulash</em> del restaurante Punto Panorámico!</p>
       </div>
 
     </section>
@@ -101,15 +100,26 @@
   </div>
 
   <div class="container-md">
-  
+
+    <section class="w-100 m-3 row text-center">
+
+      <h2>¡Reservá tu viaje!</h2>
+      <p>Viví una experiencia única e inolvidable en uno de los lugares más lindos del mundo.</p>
+
+    </section>
+
     <section class="w-100 m-3 row justify-content-around">
 
       <div class="w-25 col-md-12 col-lg-3">
-        <img src="imagenes/imagen1.jpg" alt="lago" class="img-fluid">
+        <img src="imagenes/caminata.jpg" alt="caminata" class="img-fluid">
       </div>
 
       <div class="w-25 col-md-12 col-lg-3">
-        <img src="imagenes/imagen2.jpg" alt="cascada" class="img-fluid">
+        <img src="imagenes/playa.jpg" alt="playa" class="img-fluid">
+      </div>
+
+      <div class="w-25 col-md-12 col-lg-3">
+        <img src="imagenes/gastronomia.jpg" alt="gastronomia" class="img-fluid">
       </div>
 
     </section>
@@ -132,7 +142,7 @@
 
         <form action="codigo.php" class="needs-validation" method="post" novalidate>
           
-          <div> 
+          <div class="casillero-modal"> 
             <!-- Nombre -->
             <label for="nombre" class="form-label">Nombre</label>
 
@@ -142,12 +152,15 @@
 
           </div> 
 
-          <!-- Email -->
-          <label for="email" class="form-label">Email</label>
+          <div class="casillero-modal">
+            <!-- Email -->
+            <label for="email" class="form-label">Email</label>
 
-          <input type="email" required name="email" id="email" class="form-control">
+            <input type="email" required name="email" id="email" class="form-control">
 
-          <div class="invalid-feedback">El campo de email está mal</div>
+            <div class="invalid-feedback">El campo de email está mal</div>
+
+          </div>
 
           <button class="btn btn-success">Enviar Formulario</button>
 
@@ -163,6 +176,10 @@
     </div>
   </div>
 </div>
+
+<footer>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque eligendi odio molestiae tempora voluptatem iusto, laborum consectetur, quo deserunt numquam eius natus a labore fugit, ad odit? Reprehenderit, dolorem?</p>
+</footer>
 
 <script src="js/codigo.js"></script>
 
