@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@600&display=swap');
 
 html, body {
+    color: darkslategray;
     background-color:gainsboro;
     margin: 0;
     padding: 0; 
     height: 100%; 
-    color: darkslategray;
 }
 
 .navbar-brand {
@@ -19,7 +19,7 @@ html, body {
     width: 50px;
 }
 
-h1, h3, h2 {
+h1, h2, h3 {
     font-weight: 600;
     font-family: 'Poppins';
 }
@@ -29,16 +29,21 @@ h1 {
     line-height: 60px;
 }
 
-h2, h3 {
-    font-size: 2.0em;
+h2 {
+    font-size: 2.25em;
     line-height: 50px;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 45px;
 }
 
 p {
     font-weight: 400;
     font-size: 1.3em;
     font-family: 'Nunito Sans';
-    line-height:40px;
+    line-height: 40px;
 }
 
 .img-fluid {
@@ -56,11 +61,10 @@ p {
     padding-bottom: 5px;
 }
 
-footer {
+.container-footer {
+    color:black;
     background-color: black;
     margin-top: 100px;
+    padding-top: 100px;
 }
 
-footer p {
-    color: black;
-}
